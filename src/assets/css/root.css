@@ -7,10 +7,72 @@
 #services-1644 .cs-flex .cs-h2 {
 	text-align: center;
 }
-
-
-
-
+.scroll.dark-mode svg path {
+	fill: #fff;
+}
+#reviews-1833 .blaze-slider.static {
+	width: 1300px;
+}
+#reviews-1833 .cs-review-group .cs-review-text {
+	font-size: var(--bodyFontSize);
+}
+#hero-227 .cs-flex-group .cs-title {
+	text-align: center;
+	margin: 0;
+	width: 100%;
+	max-width: 100%;
+}
+#hero-227 .cs-container .cs-flex-group {
+	width: 100%;
+	max-width: 100%;
+	margin-left: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#hero-227 .cs-container .cs-flex-group .cs-text {
+	margin-right: 0;
+	width: 80%;
+	max-width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+#sbs-523.custom .cs-container {
+	max-width: 1300px;
+	align-items: center;
+	overflow: hidden;
+	height: 25rem;
+  background: #102434;
+}
+#sbs-523.custom .cs-image-group {
+	height: 100%;
+	width: 100%;
+}
+#sbs-523.custom .cs-image-group::before {
+	content: none;
+}
+#sbs-523.custom .cs-picture{
+  position: static;
+}
+#sbs-523.custom .cs-title {
+	color: #fff;
+} 
+#sbs-523.custom .cs-content {
+  height: 100%;
+  justify-content: center;
+}
+/* About Page */
+#gallery-378 .cs-text {
+	max-width: 100%;
+	width: 80%;
+	margin-bottom: 20px;
+}
+#gallery-378 .cs-text:last-child {
+	margin-bottom: 0px;
+}
+#sbs-523.custom {
+	background: #1a1a1a;
+}
 /* saira-300 - latin */
 @font-face {
   font-display: swap;
@@ -1317,7 +1379,7 @@
   }
   #hero-227 .cs-text {
     /* 16px - 20px */
-    font-size: clamp(1rem, 1.95vw, 1.25rem);
+    font-size: var(--bodyFontSize);
     line-height: 1.5em;
     text-align: left;
     width: 100%;

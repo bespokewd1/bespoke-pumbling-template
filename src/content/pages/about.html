@@ -10,6 +10,7 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="{{ client.domain }}/assets/css/about.css">
+    <link rel="stylesheet" href="{{ client.domain }}/assets/css/portfolio.css">
 
     <!--          Blaze Assets        -->
     <link rel="stylesheet" href="{{ client.domain }}/assets/css/blaze.css">
@@ -141,92 +142,83 @@ eleventyNavigation:
         </div>
     </section>
 
-    <!-- ============================================ -->
-    <!--                  Reviews                     -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
 
-    <section id="reviews-1833">
+
+    <section id="gallery-378">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Testimonials</span>
-                <h2 class="cs-title">Our Members Testimonials</h2>
+                <span class="cs-topper">Trusted Plumbing Professionals with a Proven Track Record</span>
+                <h2 class="cs-title">Our Journey: Expertise Built Over the Years</h2>
+                <p class="cs-text">
+                    With years of experience in the plumbing industry, we have proudly served homeowners and businesses in Edmonton and beyond. Our team of certified experts is dedicated to delivering high-quality plumbing solutions, from repairs to full system installations. We have built a reputation for reliability, efficiency, and exceptional customer service.
+                </p>
+                <p class="cs-text">
+                    From humble beginnings to becoming a trusted name in the industry, our commitment remains the same—providing top-tier plumbing services tailored to your needs. Whether it's a minor leak or a large-scale commercial project, we bring expertise, innovation, and professionalism to every job.
+                </p>
+                <p class="cs-text">
+                    Would you like me to personalize this further based on your company’s founding year, mission, or specific achievements?
+                </p>
             </div>
-            <div class="blaze-slider">
-                <div class="blaze-container">
-                <div class="blaze-track-container">
-                    <div class="blaze-track">
-                    <div class="blaze-slide">
-                        <div class="cs-flex-group">
-                            <div class="cs-review-group">
-                                <!--Stars-->
-                                <img class="cs-stars" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg" alt="quotes" width="97" height="80" aria-hidden="true">
-                                <p class="cs-review-text">
-                                    ”Great gym! A new gym with modern equipment and facilities makes training so much easier. Always willing to help you with your training”
-                                </p>
-                                <span class="cs-name">Britney Allison</span>
-                                <span class="cs-job">Founder of Yokoloko</span>
-                                <!--Quote-->
-                                <img class="cs-quote" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg" alt="quotes" width="97" height="80" aria-hidden="true">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blaze-slide">
-                        <div class="cs-flex-group">
-                            <div class="cs-review-group">
-                                <!--Stars-->
-                                <img class="cs-stars" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg" alt="quotes" width="97" height="80" aria-hidden="true">
-                                <p class="cs-review-text">
-                                    ”Great gym! A new gym with modern equipment and facilities makes training so much easier. Always willing to help you with your training”
-                                </p>
-                                <span class="cs-name">Britney Allison</span>
-                                <span class="cs-job">Founder of Yokoloko</span>
-                                <!--Quote-->
-                                <img class="cs-quote" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg" alt="quotes" width="97" height="80" aria-hidden="true">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blaze-slide">
-                        <div class="cs-flex-group">
-                            <div class="cs-review-group">
-                                <!--Stars-->
-                                <img class="cs-stars" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg" alt="quotes" width="97" height="80" aria-hidden="true">
-                                <p class="cs-review-text">
-                                    ”Great gym! A new gym with modern equipment and facilities makes training so much easier. Always willing to help you with your training”
-                                </p>
-                                <span class="cs-name">Britney Allison</span>
-                                <span class="cs-job">Founder of Yokoloko</span>
-                                <!--Quote-->
-                                <img class="cs-quote" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg" alt="quotes" width="97" height="80" aria-hidden="true">
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="blaze-nav">
-                    <div class="blaze-pagination"></div>
-                </div>
-                </div>
+            
+            <div class="cs-gallery">
+                <!--Picture 1-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery1.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery2.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery3.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 4-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery4.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 5-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery5.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 6-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery6.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 7-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery7.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery7.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery7.jpg" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 8-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery8.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery8.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/gallery8.jpg" alt="gallery" width="305" height="400">
+                </picture>
             </div>
-            <!--Slider Initialization Script-->
-            <script>
-                const el = document.querySelector('.blaze-slider')
-                new BlazeSlider(el)
-            </script>
-            <a href="{{ client.google_review }}" class="cs-button-solid" target="_blank">See More Reviews</a>
         </div>
-        <!--Texture Graphic-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 1023px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture-m.png">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 1024px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture.png">
-            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture.png" alt="dotted texture" width="1920" height="600">
-        </picture>
-    </section> 
+    </section>
 
     <!-- ============================================ -->
     <!--                    Team                      -->
-    <!-- ============================================ -->
+    <!-- ============================================ 
 
     <section id="meet-team-2071">
         <div class="cs-container">
@@ -301,7 +293,7 @@ eleventyNavigation:
             <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg">
             <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg" alt="dentist staff" width="1024" height="894">
         </picture>
-    </section>
+    </section> -->
 
 {% include "components/cta.html" %}
 
