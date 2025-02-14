@@ -597,6 +597,9 @@
   body.scroll #cs-navigation .cs-drop-ul {
     background-color: var(--bodyTextColorWhite);
   }
+  body.dark-mode.scroll #cs-navigation .cs-drop-ul {
+    background-color: #1a1a1a;
+  }
   #cs-navigation .cs-dropdown {
     position: relative;
   }
@@ -711,7 +714,10 @@
     color: var(--headerColor);
   }
   body.scroll #cs-navigation .cs-button-solid {
-    color: var(--headerColor);
+    color: var(--headercolor);
+  }
+  body.dark-mode.scroll #cs-navigation .cs-button-solid {
+    color: #fff;
   }
   body.dark-mode #cs-navigation:before {
     background: #1a1a1a;

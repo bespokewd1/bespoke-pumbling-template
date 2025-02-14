@@ -684,6 +684,14 @@
     }
   }
 
+  body.dark-mode.scroll {
+    #cs-navigation {
+      .cs-drop-ul {
+        background-color: #1a1a1a;
+      }
+    }
+  }
+
   #cs-navigation {
     .cs-dropdown {
       position: relative;
@@ -824,7 +832,15 @@
       }
 
       .cs-button-solid {
-        color: var(--headerColor);
+        color: var(--headercolor);
+      }
+    }
+  }
+
+  body.dark-mode.scroll {
+    #cs-navigation {
+      .cs-button-solid {
+        color: #fff;
       }
     }
   }
@@ -3392,4 +3408,3 @@
     }
   }
 }
-
