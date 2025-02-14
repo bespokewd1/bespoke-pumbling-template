@@ -1,166 +1,91 @@
-#hero-227 .cs-picture.cs-picture-large img {
-	display: block;
-}
-#services-1644 .cs-image-group {
-	text-align: center;
-}
-#services-1644 .cs-flex .cs-h2 {
-	text-align: center;
-}
-.scroll.dark-mode svg path {
-	fill: #fff;
-}
-#reviews-1833 .blaze-slider.static {
-	width: 1300px;
-}
-#reviews-1833 .cs-review-group .cs-review-text {
-	font-size: var(--bodyFontSize);
-}
-#hero-227 .cs-flex-group .cs-title {
-	text-align: center;
-	margin: 0;
-	width: 100%;
-	max-width: 100%;
-}
-#hero-227 .cs-container .cs-flex-group {
-	width: 100%;
-	max-width: 100%;
-	margin-left: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-#hero-227 .cs-container .cs-flex-group .cs-text {
-	margin-right: 0;
-	width: 80%;
-	max-width: 100%;
-	text-align: center;
-	margin-top: 30px;
-}
-#sbs-523.custom .cs-container {
-	max-width: 1300px;
-	align-items: center;
-	overflow: hidden;
-	height: 25rem;
-  background: #102434;
-}
-#sbs-523.custom .cs-image-group {
-	height: 100%;
-	width: 100%;
-}
-#sbs-523.custom .cs-image-group::before {
-	content: none;
-}
-#sbs-523.custom .cs-picture{
-  position: static;
-}
-#sbs-523.custom .cs-title {
-	color: #fff;
-} 
-#sbs-523.custom .cs-content {
-  height: 100%;
-  justify-content: center;
-}
-/* About Page */
-#gallery-378 .cs-text {
-	max-width: 100%;
-	width: 80%;
-	margin-bottom: 20px;
-}
-#gallery-378 .cs-text:last-child {
-	margin-bottom: 0px;
-}
-#sbs-523.custom {
-	background: #1a1a1a;
-}
 /* saira-300 - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/saira-v20-latin-300.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-300.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* saira-regular - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/saira-v20-latin-regular.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-regular.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* saira-italic - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/saira-v20-latin-italic.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-italic.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* saira-500 - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/saira-v20-latin-500.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-500.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* saira-500italic - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: italic;
   font-weight: 500;
-  src: url('../fonts/saira-v20-latin-500italic.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-500italic.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* saira-600 - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/saira-v20-latin-600.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-600.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* saira-600italic - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: italic;
   font-weight: 600;
-  src: url('../fonts/saira-v20-latin-600italic.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-600italic.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* saira-700 - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/saira-v20-latin-700.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-700.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* saira-700italic - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: italic;
   font-weight: 700;
-  src: url('../fonts/saira-v20-latin-700italic.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-700italic.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /*-- -------------------------- -->
@@ -169,11 +94,11 @@
 @media only screen and (min-width: 0rem) {
   :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #3074E9;
+    --primary: #3074e9;
     --primaryLight: #30d1e9;
-    --primaryBreaker: #3074E977;
-    --secondary: #F6EDDF;
-    --secondaryLight: #F6EDDF;
+    --primaryBreaker: #3074e977;
+    --secondary: #f6eddf;
+    --secondaryLight: #f6eddf;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
@@ -185,7 +110,7 @@
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
     --bodyFontFamily: Helvetica, Aria, sans-serif;
-    --headerFontFamily: 'Saira', Helvetica, sans-serif;
+    --headerFontFamily: "Saira", Helvetica, sans-serif;
   }
   body {
     font-family: var(--bodyFontFamily);
@@ -309,14 +234,18 @@
   }
   #dark-mode-toggle .cs-moon {
     z-index: 2;
-    transition: transform 0.3s, opacity 0.3s;
+    transition:
+      transform 0.3s,
+      opacity 0.3s;
     fill: #ffffff;
   }
   #dark-mode-toggle .cs-sun {
     z-index: 1;
     transform: translate(-50%, 100%);
     opacity: 0;
-    transition: transform 0.3s, opacity 0.3s;
+    transition:
+      transform 0.3s,
+      opacity 0.3s;
   }
 }
 /* Desktop - 1024px */
@@ -382,7 +311,9 @@
     right: 0;
     z-index: -1100;
     opacity: 0;
-    transition: width 0.5s, opacity 0.5s;
+    transition:
+      width 0.5s,
+      opacity 0.5s;
   }
   #cs-navigation.cs-active {
     background-color: #1a1a1a;
@@ -478,7 +409,10 @@
   #cs-navigation .cs-line1 {
     top: 0;
     transform-origin: center;
-    transition: transform 0.5s, top 0.3s, left 0.3s;
+    transition:
+      transform 0.5s,
+      top 0.3s,
+      left 0.3s;
     animation-duration: 0.7s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -487,7 +421,10 @@
   #cs-navigation .cs-line2 {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    transition: top 0.3s, left 0.3s, transform 0.5s;
+    transition:
+      top 0.3s,
+      left 0.3s,
+      transform 0.5s;
     animation-duration: 0.7s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -495,7 +432,9 @@
   }
   #cs-navigation .cs-line3 {
     bottom: 0;
-    transition: bottom 0.3s, opacity 0.3s;
+    transition:
+      bottom 0.3s,
+      opacity 0.3s;
   }
   #cs-navigation .cs-ul-wrapper {
     min-width: 60vw;
@@ -511,7 +450,9 @@
     z-index: -1;
     transform: scaleX(0);
     transform-origin: top right;
-    transition: transform 0.4s, opacity 0.3s;
+    transition:
+      transform 0.4s,
+      opacity 0.3s;
   }
   #cs-navigation .cs-ul {
     margin: 0;
@@ -535,7 +476,9 @@
     /* transition from these values */
     transform: translateX(-2.5rem);
     opacity: 0;
-    transition: transform 0.6s, opacity 0.9s;
+    transition:
+      transform 0.6s,
+      opacity 0.9s;
   }
   #cs-navigation .cs-li:nth-of-type(1) {
     transition-delay: 0.05s;
@@ -651,7 +594,13 @@
     gap: 0.75rem;
     transform: scale(0);
     transform-origin: top right;
-    transition: padding 0.3s, margin 0.3s, height 0.3s, opacity 0.3s, transform 0.3s, visibility 0.3s;
+    transition:
+      padding 0.3s,
+      margin 0.3s,
+      height 0.3s,
+      opacity 0.3s,
+      transform 0.3s,
+      visibility 0.3s;
   }
   #cs-navigation .cs-drop-li {
     list-style: none;
@@ -700,7 +649,10 @@
     z-index: -100;
     transform: scaleY(0);
     transform-origin: top;
-    transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
+    transition:
+      transform 0.3s,
+      visibility 0.3s,
+      opacity 0.3s;
   }
   #cs-navigation .cs-drop-li {
     list-style: none;
@@ -711,7 +663,9 @@
     height: auto;
     display: block;
     transform: translateY(-0.625rem);
-    transition: opacity 0.6s, transform 0.6s;
+    transition:
+      opacity 0.6s,
+      transform 0.6s;
   }
   #cs-navigation .cs-drop-li:nth-of-type(1) {
     transition-delay: 0.05s;
@@ -754,7 +708,9 @@
     box-sizing: border-box;
     color: var(--bodyTextColorWhite);
     display: block;
-    transition: color 0.3s, background-color 0.3s;
+    transition:
+      color 0.3s,
+      background-color 0.3s;
   }
   #cs-navigation .cs-li-link.cs-drop-link:hover {
     background-color: var(--primary);
@@ -834,7 +790,8 @@
   #cs-navigation .cs-ul-wrapper {
     /* absolutely positioned to be dead center */
     position: absolute;
-    left: 50%;
+    /* left: 50%; */
+    left: 42%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
@@ -845,7 +802,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 1.5rem;
+    /* gap: 1.5rem; */
+    gap: 1rem;
   }
   #cs-navigation .cs-li {
     list-style: none;
@@ -881,7 +839,9 @@
     left: 50%;
     z-index: -1;
     transform: translate(-50%, -50%) scale(1.2);
-    transition: opacity 0.3s, transform 0.3s;
+    transition:
+      opacity 0.3s,
+      transform 0.3s;
   }
   #cs-navigation .cs-li-link:hover:before {
     opacity: 1;
@@ -910,6 +870,7 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
+
   #cs-navigation .cs-button-solid:before {
     content: "";
     position: absolute;
@@ -1089,7 +1050,9 @@
     align-items: center;
     position: relative;
     z-index: 1;
-    transition: transform 0.3s, background-color 0.3s;
+    transition:
+      transform 0.3s,
+      background-color 0.3s;
   }
   #cs-footer-840 .cs-social-link:hover {
     background-color: var(--primaryLight);
@@ -1329,9 +1292,17 @@
     content: "";
     width: 1px;
     height: 100%;
-    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
+    background: -moz-linear-gradient(
+      top,
+      rgba(250, 251, 252, 0.5) 0%,
+      rgba(250, 251, 252, 0) 100%
+    );
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
+    background: -webkit-linear-gradient(
+      top,
+      rgba(250, 251, 252, 0.5) 0%,
+      rgba(250, 251, 252, 0) 100%
+    );
     /* Chrome10-25,Safari5.1-6 */
     opacity: 1;
     position: absolute;
@@ -1379,7 +1350,7 @@
   }
   #hero-227 .cs-text {
     /* 16px - 20px */
-    font-size: var(--bodyFontSize);
+    font-size: clamp(1rem, 1.95vw, 1.25rem);
     line-height: 1.5em;
     text-align: left;
     width: 100%;
@@ -1483,9 +1454,17 @@
     content: "";
     width: 100vw;
     height: 1px;
-    background: -moz-linear-gradient(left, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
+    background: -moz-linear-gradient(
+      left,
+      rgba(250, 251, 252, 0.5) 0%,
+      rgba(250, 251, 252, 0) 100%
+    );
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
+    background: -webkit-linear-gradient(
+      left,
+      rgba(250, 251, 252, 0.5) 0%,
+      rgba(250, 251, 252, 0) 100%
+    );
     /* Chrome10-25,Safari5.1-6 */
     opacity: 1;
     position: absolute;
@@ -1499,9 +1478,17 @@
     content: "";
     width: 100vw;
     height: 1px;
-    background: -moz-linear-gradient(left, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
+    background: -moz-linear-gradient(
+      left,
+      rgba(250, 251, 252, 0.5) 0%,
+      rgba(250, 251, 252, 0) 100%
+    );
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
+    background: -webkit-linear-gradient(
+      left,
+      rgba(250, 251, 252, 0.5) 0%,
+      rgba(250, 251, 252, 0) 100%
+    );
     /* Chrome10-25,Safari5.1-6 */
     opacity: 1;
     position: absolute;
@@ -1583,9 +1570,17 @@
     content: "";
     width: 1px;
     height: 100%;
-    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%);
+    background: -moz-linear-gradient(
+      top,
+      rgba(250, 251, 252, 0) 0%,
+      rgba(250, 251, 252, 0.5) 100%
+    );
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%);
+    background: -webkit-linear-gradient(
+      top,
+      rgba(250, 251, 252, 0) 0%,
+      rgba(250, 251, 252, 0.5) 100%
+    );
     /* Chrome10-25,Safari5.1-6 */
     opacity: 1;
     position: absolute;
@@ -1610,9 +1605,17 @@
     /* make it extend past the left and right of the screen */
     width: 150vw;
     height: 1px;
-    background: -moz-linear-gradient(left, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
+    background: -moz-linear-gradient(
+      left,
+      rgba(250, 251, 252, 0.5) 0%,
+      rgba(250, 251, 252, 0) 100%
+    );
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
+    background: -webkit-linear-gradient(
+      left,
+      rgba(250, 251, 252, 0.5) 0%,
+      rgba(250, 251, 252, 0) 100%
+    );
     /* Chrome10-25,Safari5.1-6 */
     opacity: 1;
     position: absolute;
@@ -1625,9 +1628,17 @@
   #hero-227 .cs-item:before {
     width: 1px;
     height: 100vh;
-    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%);
+    background: -moz-linear-gradient(
+      top,
+      rgba(250, 251, 252, 0) 0%,
+      rgba(250, 251, 252, 0.5) 100%
+    );
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%);
+    background: -webkit-linear-gradient(
+      top,
+      rgba(250, 251, 252, 0) 0%,
+      rgba(250, 251, 252, 0.5) 100%
+    );
     /* Chrome10-25,Safari5.1-6 */
     top: auto;
     left: auto;
@@ -1822,7 +1833,7 @@
   }
   #why-choose-1657 .cs-wrapper {
     /* -60px to -140px */
-    margin-top: calc(clamp(3.75rem, 10vw, 8.75rem)*-1);
+    margin-top: calc(clamp(3.75rem, 10vw, 8.75rem) * -1);
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
@@ -2072,7 +2083,9 @@
     display: block;
     width: 100%;
     position: relative;
-    transition: background-color 0.3s, color 0.3s;
+    transition:
+      background-color 0.3s,
+      color 0.3s;
   }
   #faq-351 .cs-button:hover {
     cursor: pointer;
@@ -2128,7 +2141,9 @@
     color: var(--bodyTextColor);
     /* clips the text so it doesn't show up */
     overflow: hidden;
-    transition: opacity 0.3s, padding-bottom 0.3s;
+    transition:
+      opacity 0.3s,
+      padding-bottom 0.3s;
   }
 }
 /* Desktop - 1024px */
@@ -2162,10 +2177,14 @@
   }
   #reviews-1833:before {
     /* gradient that softens the transition from the pattern to the edge of the section */
-    content: '';
+    content: "";
     width: 100%;
     height: 20%;
-    background: linear-gradient(to bottom, #222222 0%, rgba(34, 34, 34, 0) 100%);
+    background: linear-gradient(
+      to bottom,
+      #222222 0%,
+      rgba(34, 34, 34, 0) 100%
+    );
     opacity: 1;
     position: absolute;
     display: block;
@@ -2174,10 +2193,14 @@
   }
   #reviews-1833:after {
     /* gradient that softens the transition from the pattern to the edge of the section */
-    content: '';
+    content: "";
     width: 100%;
     height: 20%;
-    background: linear-gradient(to bottom, rgba(34, 34, 34, 0) 0%, #222222 100%);
+    background: linear-gradient(
+      to bottom,
+      rgba(34, 34, 34, 0) 0%,
+      #222222 100%
+    );
     opacity: 1;
     position: absolute;
     display: block;
@@ -2293,7 +2316,7 @@
     position: absolute;
     top: 0;
     /* 100px - 160px */
-    right: calc(clamp(6.25rem, 17vw, 10rem)*-1);
+    right: calc(clamp(6.25rem, 17vw, 10rem) * -1);
     z-index: -1;
   }
   #reviews-1833 .cs-waves img {
@@ -2429,10 +2452,15 @@
   }
   #services-1644 .cs-item:before {
     /* gradient line divider */
-    content: '';
+    content: "";
     width: 100%;
     height: 1px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #bababa 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      #bababa 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
     opacity: 0.6;
     position: absolute;
     display: block;
@@ -2487,7 +2515,12 @@
   #services-1644 .cs-item:before {
     width: 1px;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #bababa 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      #bababa 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
     left: auto;
     right: 0;
   }
@@ -2771,7 +2804,9 @@
     width: 1.25rem;
     height: auto;
     display: block;
-    transition: filter 0.3s, transform 0.3s;
+    transition:
+      filter 0.3s,
+      transform 0.3s;
   }
   #blog-1701 .cs-background {
     width: 100%;
@@ -2921,9 +2956,17 @@
     display: block;
     height: 100%;
     width: 100%;
-    background: -moz-linear-gradient(left, rgba(26, 26, 26, 0.94) 0%, rgba(26, 26, 26, 0) 100%);
+    background: -moz-linear-gradient(
+      left,
+      rgba(26, 26, 26, 0.94) 0%,
+      rgba(26, 26, 26, 0) 100%
+    );
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(26, 26, 26, 0.94) 0%, rgba(26, 26, 26, 0) 100%);
+    background: -webkit-linear-gradient(
+      left,
+      rgba(26, 26, 26, 0.94) 0%,
+      rgba(26, 26, 26, 0) 100%
+    );
     /* Chrome10-25,Safari5.1-6 */
     opacity: 1;
     top: 0;
@@ -3008,7 +3051,7 @@
     box-sizing: border-box;
   }
   #content-1450 .cs-button-solid:before {
-    content: '';
+    content: "";
     position: absolute;
     height: 100%;
     width: 0%;
