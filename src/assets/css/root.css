@@ -111,8 +111,7 @@
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
     --bodyFontFamily: Helvetica, Aria, sans-serif;
     --headerFontFamily: "Saira", Helvetica, sans-serif;
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-      0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
   }
   body {
     font-family: var(--bodyFontFamily);
@@ -202,6 +201,9 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+  body.scroll #dark-mode-toggle .cs-moon {
+    fill: var(--headerColor);
+  }
   body.dark-mode #dark-mode-toggle .cs-sun {
     transform: translate(-50%, -50%);
     opacity: 1;
@@ -236,24 +238,14 @@
   }
   #dark-mode-toggle .cs-moon {
     z-index: 2;
-    transition:
-      transform 0.3s,
-      opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
     fill: #ffffff;
   }
-
-  /* styling for the .cs-moon when scrolled down in light mode  (darkmode toggle)*/
-  body.scroll #dark-mode-toggle .cs-moon {
-    fill: var(--headerColor);
-  }
-
   #dark-mode-toggle .cs-sun {
     z-index: 1;
     transform: translate(-50%, 100%);
     opacity: 0;
-    transition:
-      transform 0.3s,
-      opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
   }
 }
 /* Desktop - 1024px */
@@ -319,9 +311,7 @@
     right: 0;
     z-index: -1100;
     opacity: 0;
-    transition:
-      width 0.5s,
-      opacity 0.5s;
+    transition: width 0.5s, opacity 0.5s;
   }
   #cs-navigation.cs-active {
     background-color: #1a1a1a;
@@ -417,10 +407,7 @@
   #cs-navigation .cs-line1 {
     top: 0;
     transform-origin: center;
-    transition:
-      transform 0.5s,
-      top 0.3s,
-      left 0.3s;
+    transition: transform 0.5s, top 0.3s, left 0.3s;
     animation-duration: 0.7s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -429,10 +416,7 @@
   #cs-navigation .cs-line2 {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    transition:
-      top 0.3s,
-      left 0.3s,
-      transform 0.5s;
+    transition: top 0.3s, left 0.3s, transform 0.5s;
     animation-duration: 0.7s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
@@ -440,9 +424,7 @@
   }
   #cs-navigation .cs-line3 {
     bottom: 0;
-    transition:
-      bottom 0.3s,
-      opacity 0.3s;
+    transition: bottom 0.3s, opacity 0.3s;
   }
   #cs-navigation .cs-ul-wrapper {
     min-width: 60vw;
@@ -458,9 +440,7 @@
     z-index: -1;
     transform: scaleX(0);
     transform-origin: top right;
-    transition:
-      transform 0.4s,
-      opacity 0.3s;
+    transition: transform 0.4s, opacity 0.3s;
   }
   #cs-navigation .cs-ul {
     margin: 0;
@@ -484,9 +464,7 @@
     /* transition from these values */
     transform: translateX(-2.5rem);
     opacity: 0;
-    transition:
-      transform 0.6s,
-      opacity 0.9s;
+    transition: transform 0.6s, opacity 0.9s;
   }
   #cs-navigation .cs-li:nth-of-type(1) {
     transition-delay: 0.05s;
@@ -602,13 +580,7 @@
     gap: 0.75rem;
     transform: scale(0);
     transform-origin: top right;
-    transition:
-      padding 0.3s,
-      margin 0.3s,
-      height 0.3s,
-      opacity 0.3s,
-      transform 0.3s,
-      visibility 0.3s;
+    transition: padding 0.3s, margin 0.3s, height 0.3s, opacity 0.3s, transform 0.3s, visibility 0.3s;
   }
   #cs-navigation .cs-drop-li {
     list-style: none;
@@ -622,6 +594,9 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+  body.scroll #cs-navigation .cs-drop-ul {
+    background-color: var(--bodyTextColorWhite);
+  }
   #cs-navigation .cs-dropdown {
     position: relative;
   }
@@ -657,22 +632,8 @@
     z-index: -100;
     transform: scaleY(0);
     transform-origin: top;
-    transition:
-      transform 0.3s,
-      visibility 0.3s,
-      opacity 0.3s;
+    transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
   }
-
-  /* styling for the dropdown parent (ul) when scrolled down in light mode*/
-  body.scroll #cs-navigation .cs-drop-ul {
-    background-color: var(--bodyTextColorWhite);
-  }
-
-  /* styling for the dropdown parent (ul) when scrolled down in dark mode*/
-  body.scroll #cs-navigation .cs-drop-ul {
-    background-color: #1a1a1a;
-  }
-
   #cs-navigation .cs-drop-li {
     list-style: none;
     font-size: 1rem;
@@ -682,9 +643,7 @@
     height: auto;
     display: block;
     transform: translateY(-0.625rem);
-    transition:
-      opacity 0.6s,
-      transform 0.6s;
+    transition: opacity 0.6s, transform 0.6s;
   }
   #cs-navigation .cs-drop-li:nth-of-type(1) {
     transition-delay: 0.05s;
@@ -727,9 +686,7 @@
     box-sizing: border-box;
     color: var(--bodyTextColorWhite);
     display: block;
-    transition:
-      color 0.3s,
-      background-color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
   }
   #cs-navigation .cs-li-link.cs-drop-link:hover {
     background-color: var(--primary);
@@ -750,12 +707,18 @@
   body.scroll #cs-navigation:before {
     height: 100%;
   }
-
-  /* styling for the background of navbar when scrolled down in dark mode*/
+  body.scroll #cs-navigation .cs-li-link {
+    color: var(--headerColor);
+  }
+  body.scroll #cs-navigation .cs-button-solid {
+    color: var(--headerColor);
+  }
   body.dark-mode #cs-navigation:before {
     background: #1a1a1a;
   }
-
+  body.dark-mode #cs-navigation .cs-li-link {
+    color: var(--bodyTextColorWhite);
+  }
   #cs-navigation {
     width: 100%;
     padding: 0 1rem;
@@ -768,7 +731,6 @@
     z-index: 10000;
     box-shadow: var(--shadow-xl);
   }
-
   #cs-navigation:before {
     /* on scroll background */
     content: "";
@@ -782,7 +744,6 @@
     left: 0;
     transition: height 0.3s;
   }
-
   #cs-navigation .cs-container {
     width: 100%;
     /* same height as the cs-ul-wrapper */
@@ -818,8 +779,7 @@
   #cs-navigation .cs-ul-wrapper {
     /* absolutely positioned to be dead center */
     position: absolute;
-    /* left: 50%; */
-    left: 42%;
+    left: 43%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
@@ -830,7 +790,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* gap: 1.5rem; */
     gap: 1rem;
   }
   #cs-navigation .cs-li {
@@ -854,17 +813,6 @@
     z-index: 1;
     transition: color 0.3s;
   }
-
-  /* change the color of the buttons when scrolled in light mode*/
-  body.scroll #cs-navigation .cs-li-link {
-    color: var(--headerColor);
-  }
-
-  /* add styles here for the cs-li-link when scrolled down in dark mode */
-  body.scroll.dark-mode #cs-navigation .cs-li-link {
-    color: var(--bodyTextColorWhite);
-  }
-
   #cs-navigation .cs-li-link:before {
     /* on scroll background */
     content: "";
@@ -878,9 +826,7 @@
     left: 50%;
     z-index: -1;
     transform: translate(-50%, -50%) scale(1.2);
-    transition:
-      opacity 0.3s,
-      transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
   }
   #cs-navigation .cs-li-link:hover:before {
     opacity: 1;
@@ -909,17 +855,6 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
-
-  /* styling for .cs-button-solid when scrolled down in light mode */
-  body.scroll #cs-navigation .cs-button-solid {
-    color: var(--headerColor);
-  }
-
-  /* styling for .cs-button-solid when scrolled down in dark mode */
-  body.scroll #cs-navigation .cs-button-solid {
-    color: #fff;
-  }
-
   #cs-navigation .cs-button-solid:before {
     content: "";
     position: absolute;
@@ -1099,9 +1034,7 @@
     align-items: center;
     position: relative;
     z-index: 1;
-    transition:
-      transform 0.3s,
-      background-color 0.3s;
+    transition: transform 0.3s, background-color 0.3s;
   }
   #cs-footer-840 .cs-social-link:hover {
     background-color: var(--primaryLight);
@@ -1341,17 +1274,9 @@
     content: "";
     width: 1px;
     height: 100%;
-    background: -moz-linear-gradient(
-      top,
-      rgba(250, 251, 252, 0.5) 0%,
-      rgba(250, 251, 252, 0) 100%
-    );
+    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      top,
-      rgba(250, 251, 252, 0.5) 0%,
-      rgba(250, 251, 252, 0) 100%
-    );
+    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
     /* Chrome10-25,Safari5.1-6 */
     opacity: 1;
     position: absolute;
@@ -1503,17 +1428,9 @@
     content: "";
     width: 100vw;
     height: 1px;
-    background: -moz-linear-gradient(
-      left,
-      rgba(250, 251, 252, 0.5) 0%,
-      rgba(250, 251, 252, 0) 100%
-    );
+    background: -moz-linear-gradient(left, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      left,
-      rgba(250, 251, 252, 0.5) 0%,
-      rgba(250, 251, 252, 0) 100%
-    );
+    background: -webkit-linear-gradient(left, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
     /* Chrome10-25,Safari5.1-6 */
     opacity: 1;
     position: absolute;
@@ -1527,17 +1444,9 @@
     content: "";
     width: 100vw;
     height: 1px;
-    background: -moz-linear-gradient(
-      left,
-      rgba(250, 251, 252, 0.5) 0%,
-      rgba(250, 251, 252, 0) 100%
-    );
+    background: -moz-linear-gradient(left, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      left,
-      rgba(250, 251, 252, 0.5) 0%,
-      rgba(250, 251, 252, 0) 100%
-    );
+    background: -webkit-linear-gradient(left, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
     /* Chrome10-25,Safari5.1-6 */
     opacity: 1;
     position: absolute;
@@ -1619,17 +1528,9 @@
     content: "";
     width: 1px;
     height: 100%;
-    background: -moz-linear-gradient(
-      top,
-      rgba(250, 251, 252, 0) 0%,
-      rgba(250, 251, 252, 0.5) 100%
-    );
+    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      top,
-      rgba(250, 251, 252, 0) 0%,
-      rgba(250, 251, 252, 0.5) 100%
-    );
+    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%);
     /* Chrome10-25,Safari5.1-6 */
     opacity: 1;
     position: absolute;
@@ -1654,17 +1555,9 @@
     /* make it extend past the left and right of the screen */
     width: 150vw;
     height: 1px;
-    background: -moz-linear-gradient(
-      left,
-      rgba(250, 251, 252, 0.5) 0%,
-      rgba(250, 251, 252, 0) 100%
-    );
+    background: -moz-linear-gradient(left, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      left,
-      rgba(250, 251, 252, 0.5) 0%,
-      rgba(250, 251, 252, 0) 100%
-    );
+    background: -webkit-linear-gradient(left, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
     /* Chrome10-25,Safari5.1-6 */
     opacity: 1;
     position: absolute;
@@ -1677,17 +1570,9 @@
   #hero-227 .cs-item:before {
     width: 1px;
     height: 100vh;
-    background: -moz-linear-gradient(
-      top,
-      rgba(250, 251, 252, 0) 0%,
-      rgba(250, 251, 252, 0.5) 100%
-    );
+    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      top,
-      rgba(250, 251, 252, 0) 0%,
-      rgba(250, 251, 252, 0.5) 100%
-    );
+    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%);
     /* Chrome10-25,Safari5.1-6 */
     top: auto;
     left: auto;
@@ -1882,7 +1767,7 @@
   }
   #why-choose-1657 .cs-wrapper {
     /* -60px to -140px */
-    margin-top: calc(clamp(3.75rem, 10vw, 8.75rem) * -1);
+    margin-top: calc(clamp(3.75rem, 10vw, 8.75rem)*-1);
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
@@ -2132,9 +2017,7 @@
     display: block;
     width: 100%;
     position: relative;
-    transition:
-      background-color 0.3s,
-      color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
   }
   #faq-351 .cs-button:hover {
     cursor: pointer;
@@ -2190,9 +2073,7 @@
     color: var(--bodyTextColor);
     /* clips the text so it doesn't show up */
     overflow: hidden;
-    transition:
-      opacity 0.3s,
-      padding-bottom 0.3s;
+    transition: opacity 0.3s, padding-bottom 0.3s;
   }
 }
 /* Desktop - 1024px */
@@ -2229,11 +2110,7 @@
     content: "";
     width: 100%;
     height: 20%;
-    background: linear-gradient(
-      to bottom,
-      #222222 0%,
-      rgba(34, 34, 34, 0) 100%
-    );
+    background: linear-gradient(to bottom, #222222 0%, rgba(34, 34, 34, 0) 100%);
     opacity: 1;
     position: absolute;
     display: block;
@@ -2245,11 +2122,7 @@
     content: "";
     width: 100%;
     height: 20%;
-    background: linear-gradient(
-      to bottom,
-      rgba(34, 34, 34, 0) 0%,
-      #222222 100%
-    );
+    background: linear-gradient(to bottom, rgba(34, 34, 34, 0) 0%, #222222 100%);
     opacity: 1;
     position: absolute;
     display: block;
@@ -2504,12 +2377,7 @@
     content: "";
     width: 100%;
     height: 1px;
-    background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0) 0%,
-      #bababa 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #bababa 50%, rgba(255, 255, 255, 0) 100%);
     opacity: 0.6;
     position: absolute;
     display: block;
@@ -2564,12 +2432,7 @@
   #services-1644 .cs-item:before {
     width: 1px;
     height: 100%;
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0) 0%,
-      #bababa 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #bababa 50%, rgba(255, 255, 255, 0) 100%);
     left: auto;
     right: 0;
   }
@@ -2853,9 +2716,7 @@
     width: 1.25rem;
     height: auto;
     display: block;
-    transition:
-      filter 0.3s,
-      transform 0.3s;
+    transition: filter 0.3s, transform 0.3s;
   }
   #blog-1701 .cs-background {
     width: 100%;
@@ -3005,17 +2866,9 @@
     display: block;
     height: 100%;
     width: 100%;
-    background: -moz-linear-gradient(
-      left,
-      rgba(26, 26, 26, 0.94) 0%,
-      rgba(26, 26, 26, 0) 100%
-    );
+    background: -moz-linear-gradient(left, rgba(26, 26, 26, 0.94) 0%, rgba(26, 26, 26, 0) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      left,
-      rgba(26, 26, 26, 0.94) 0%,
-      rgba(26, 26, 26, 0) 100%
-    );
+    background: -webkit-linear-gradient(left, rgba(26, 26, 26, 0.94) 0%, rgba(26, 26, 26, 0) 100%);
     /* Chrome10-25,Safari5.1-6 */
     opacity: 1;
     top: 0;
