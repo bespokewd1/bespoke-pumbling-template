@@ -25,33 +25,33 @@ Welcome to the highly anticipated <b>Advanced Starter</b> Kit by <b>CodeStitch</
  
 # Table of Contents
 
--   [Overview](#overview)
--   [Prerequisites](#prerequisites)
--   [Getting Started](#getting-started)
--   [Branches](#branches)
-    -   [Main](#main)
-        -   [Features](#features)
-        -   [Development Notes](#development-notes)
-        -   [Deployment Notes](#deployment-notes)
-    -   [LESS/SASS](#less-sass)
-        -   [Features](#features-1)
-        -   [Development Notes](#development-notes-1)
-        -   [Deployment Notes](#deployment-notes-1)
-    -   [CMS](#cms)
-        -   [Features](#features-2)
-        -   [Development Notes](#development-notes-2)
-        -   [Deployment Notes](#deployment-notes-2)
-    -   [Optimization](#optimization)
-        -   [Features](#features-3)
-        -   [Development Notes](#development-notes-3)
-        -   [Deployment Notes](#deployment-notes-3)
-    -   [Shopify](#shopify)
-    -   [Features](#features-4)
-    -   [Development Notes](#development-notes-4)
-        -   [Rendering Products/Collections](#rendering-products-collections)
-            -   [An additional note on customizing the GraphQL query](#an-additional-note-on-customizing-the-graphql-query)
-            -   [Setting up Purchase Functionality](#setting-up-purchase-functionality)
-        -   [Deployment Notes](#deployment-notes-4)
+- [Overview](#overview)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Branches](#branches)
+  - [Main](#main)
+    - [Features](#features)
+    - [Development Notes](#development-notes)
+    - [Deployment Notes](#deployment-notes)
+  - [LESS/SASS](#less-sass)
+    - [Features](#features-1)
+    - [Development Notes](#development-notes-1)
+    - [Deployment Notes](#deployment-notes-1)
+  - [CMS](#cms)
+    - [Features](#features-2)
+    - [Development Notes](#development-notes-2)
+    - [Deployment Notes](#deployment-notes-2)
+  - [Optimization](#optimization)
+    - [Features](#features-3)
+    - [Development Notes](#development-notes-3)
+    - [Deployment Notes](#deployment-notes-3)
+  - [Shopify](#shopify)
+  - [Features](#features-4)
+  - [Development Notes](#development-notes-4)
+    - [Rendering Products/Collections](#rendering-products-collections)
+      - [An additional note on customizing the GraphQL query](#an-additional-note-on-customizing-the-graphql-query)
+      - [Setting up Purchase Functionality](#setting-up-purchase-functionality)
+    - [Deployment Notes](#deployment-notes-4)
 
 <a name="overview"></a>
 
@@ -93,10 +93,10 @@ Since template repositories do not retain commit history, merging feature branch
 
 6. Resolve any conflicts that arise.
 
-    - Conflicts should typically occur in `package.json`, `package-lock.json`, and `.eleventy.js` due to different dependencies merging at various stages in the commit history.
-    - Resolving `package.json` conflicts is straightforward; accept both changes and remove any duplicate scripts or dependencies.
-    - Handling `.eleventy.js` conflicts may require more manual intervention. You'll need to carefully select which plugins, filters, passthroughs, etc., to retain. Ensure everything is included.
-    - Resolving `package-lock.json` conflicts is more challenging; simply run `npm install` to update the file.
+   - Conflicts should typically occur in `package.json`, `package-lock.json`, and `.eleventy.js` due to different dependencies merging at various stages in the commit history.
+   - Resolving `package.json` conflicts is straightforward; accept both changes and remove any duplicate scripts or dependencies.
+   - Handling `.eleventy.js` conflicts may require more manual intervention. You'll need to carefully select which plugins, filters, passthroughs, etc., to retain. Ensure everything is included.
+   - Resolving `package-lock.json` conflicts is more challenging; simply run `npm install` to update the file.
 
 7. To ensure that no dependencies have been missed, delete the `node_modules` folder and run `npm install` one final time. If any package files have been missed during merging, you should see an error prompting you to install them.
 
@@ -126,15 +126,15 @@ The **main** branch of the kit provides a base for the rest of the branches to b
 
 ### Features
 
--   A minimalistic preconfigured 11ty set up with a standardized source file structure.
+- A minimalistic preconfigured 11ty set up with a standardized source file structure.
 
--   Centralized client data.
+- Centralized client data.
 
--   A preconfigured HTML `<head>`, dynamic to the data provided in `_data/client.json`.
+- A preconfigured HTML `<head>`, dynamic to the data provided in `_data/client.json`.
 
--   An automatically generated `robots.TXT` file.
+- An automatically generated `robots.TXT` file.
 
--   A preconfigured `netlify.toml` file to facilitate one-click deployment.
+- A preconfigured `netlify.toml` file to facilitate one-click deployment.
 
 <a name="development-notes"></a>
 
@@ -172,6 +172,28 @@ Given the minimalistic nature of this branch, on its own, there are very few con
 └── package.json
 ```
 
+#### Defining css style sheet
+
+**Problem:** Using `{{ client.domain }}` in CSS links:
+
+Using client.domain in the `href` attribute to connect css in the page means will get the domain defined in the **\_data/client.json** this will cause problems especially in local development because this means that it will get the **CSS assets** directly in the **live page** instead of _local assets_ which makes the changes made locally will not taken affect in the local environment.
+
+**Fix**:
+
+❌ **Dont Do This**:
+
+```html
+<link rel="stylesheet" href="{{ client.domain }}/assets/css/home.css" />
+```
+
+✅ **Do This**:
+
+```html
+<link rel="stylesheet" href="/assets/css/home.css" />
+```
+
+This means it will use the relative path so no matter what _environment_ it will use that environment's url(production or development)
+
 <a name="deployment-notes"></a>
 
 ### Deployment Notes
@@ -192,7 +214,7 @@ The kit only includes the preprocessors for these languages and does not contain
 
 ### Features
 
--   A **SASS** or **LESS** preprocessor
+- A **SASS** or **LESS** preprocessor
 
 <a name="development-notes-1"></a>
 
@@ -218,23 +240,23 @@ The CMS provides a range of collections within the cap which one can pick and ch
 
 ### Features
 
--   An `admin/` directory, containing an index file to render the CMS single-page app and the `config.yaml` file to configure Decap.
+- An `admin/` directory, containing an index file to render the CMS single-page app and the `config.yaml` file to configure Decap.
 
--   A range of prebuilt configurations for the CMS for you to pick and choose from:
+- A range of prebuilt configurations for the CMS for you to pick and choose from:
 
-    -   Hooking up the `client.json` file to the CMS so clients can change their social media/contact information themselves.
+  - Hooking up the `client.json` file to the CMS so clients can change their social media/contact information themselves.
 
-    -   A blog, allowing clients to add, edit, and remove posts as they please.
+  - A blog, allowing clients to add, edit, and remove posts as they please.
 
-        -   Data - `content/blog`
-        -   Blog listing page - `content/pages/cms-blog.html`
-        -   Blog article page - `_includes/layouts/post.html`
-        -   Styles - `cms-blog.css/less/sass`
+    - Data - `content/blog`
+    - Blog listing page - `content/pages/cms-blog.html`
+    - Blog article page - `_includes/layouts/post.html`
+    - Styles - `cms-blog.css/less/sass`
 
-    -   A menu that scales with the different sections and meals that a client can define.
-        -   Data - `\_data/menu.json`
-        -   Menu page - `content/pages/cms-menu.html`
-        -   Styles - `cms-menu.css/less/sass`
+  - A menu that scales with the different sections and meals that a client can define.
+    - Data - `\_data/menu.json`
+    - Menu page - `content/pages/cms-menu.html`
+    - Styles - `cms-menu.css/less/sass`
 
 <a name="development-notes-2"></a>
 
@@ -265,17 +287,17 @@ For the most part, the majority of this functionality is built into this branch 
 
 ### Features
 
--   Automatic minification of your HTML, CSS, and JavaScript code. This feature is active when the website is deployed to Netlify, ensuring that you can enjoy fully commented code during development.
+- Automatic minification of your HTML, CSS, and JavaScript code. This feature is active when the website is deployed to Netlify, ensuring that you can enjoy fully commented code during development.
 
--   Inlining of critical CSS above the fold on a 1920x1080 pixel device.
+- Inlining of critical CSS above the fold on a 1920x1080 pixel device.
 
--   Sitemap generation at build time, depending on the pages provided in the `content/` directory. Please note that there is a known bug resulting in Shopify pages not being included in the sitemap generation, and we are actively addressing it.
+- Sitemap generation at build time, depending on the pages provided in the `content/` directory. Please note that there is a known bug resulting in Shopify pages not being included in the sitemap generation, and we are actively addressing it.
 
--   Adding CSS as a template language, allowing it to pass through a straightforward post-CSS configuration with automatic addition of vendor prefixes to CSS properties. This can be easily extended with the rest of the [PostCSS](https://postcss.org/) ecosystem.
+- Adding CSS as a template language, allowing it to pass through a straightforward post-CSS configuration with automatic addition of vendor prefixes to CSS properties. This can be easily extended with the rest of the [PostCSS](https://postcss.org/) ecosystem.
 
--   Adding JavaScript as a template language, passing it through an ES build process. This provides bundling and minification of your scripts.
+- Adding JavaScript as a template language, passing it through an ES build process. This provides bundling and minification of your scripts.
 
--   (Optional) Automatic resizing of images, generation of picture HTML, and serving them in next-generation formats.
+- (Optional) Automatic resizing of images, generation of picture HTML, and serving them in next-generation formats.
 
 <a name="development-notes-3"></a>
 
@@ -313,11 +335,11 @@ For small e-commerce clients who won't be making many changes and don't require 
 
 ## Features
 
--   A generic product listing and product detail page setup that adapts based on what collections and products are defined in the Shopify backend.
+- A generic product listing and product detail page setup that adapts based on what collections and products are defined in the Shopify backend.
 
--   A preset, GraphQL Storefront API query to fetch most commonly required products from Shopify.
+- A preset, GraphQL Storefront API query to fetch most commonly required products from Shopify.
 
--   Transforming the data at build-time to streamline the data-injection process while still keeping the raw GQL data.
+- Transforming the data at build-time to streamline the data-injection process while still keeping the raw GQL data.
 
 <a name="development-notes-4"></a>
 
