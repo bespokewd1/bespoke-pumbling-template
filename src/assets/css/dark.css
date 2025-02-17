@@ -5,6 +5,7 @@
 @media only screen and (min-width: 0rem) {
   :root {
     --dark: #082032;
+    --dark-variant: rgba(0, 0, 0, 0.6);
     --darkBreaker: rgba(0, 0, 0, 0.3);
     --medium: #2c394b;
     --accent: #334756;
@@ -46,7 +47,7 @@
 /* Footer */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #cs-footer-840 {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: var(--dark-variant);
   }
 }
 /* Hero */
@@ -137,6 +138,23 @@
     background-color: var(--medium);
   }
 }
+/* Homepage Three cards*/
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #three-cards {
+    background-color: #222222;
+  }
+  body.dark-mode #three-cards .cs-title,
+  body.dark-mode #three-cards .cs-button-solid,
+  body.dark-mode #three-cards .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #three-cards .cs-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #three-cards .cs-box {
+    background-color: var(--medium);
+  }
+}
 /* Homepage FAQ */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #faq-351 {
@@ -175,6 +193,9 @@
 }
 /* Homepage Services */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #services-1644 {
+    background-color: #222222;
+  }
   body.dark-mode #services-1644 .cs-title,
   body.dark-mode #services-1644 .cs-text,
   body.dark-mode #services-1644 .cs-h2,
