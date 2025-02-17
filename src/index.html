@@ -14,7 +14,7 @@ eleventyNavigation:
 
 <!--          Blaze Assets        -->
 <link rel="stylesheet" href="/assets/css/blaze.css" />
-<script src="assets/js/blaze-slider.dev.js"></script>
+<script src="/assets/js/blaze-slider.dev.js"></script>
 
 {% endblock %} {% extends 'layouts/base.html' %} {% block body %}
 
@@ -61,42 +61,149 @@ eleventyNavigation:
 </section>
 
 <!-- ============================================ -->
-<!--                 Side By Side                 -->
+<!--                Three Cards                   -->
 <!-- ============================================ -->
 
-<section id="sbs-523" class="custom">
+<section id="three-cards">
   <div class="cs-container">
-    <!-- Left Image Section -->
-    <div class="cs-image-group">
-      <picture class="cs-picture cs-picture-large">
-        <source
-          media="(max-width: 600px)"
-          srcset="./assets/images/man-fixing-wave.webp"
-        />
-        <source
-          media="(min-width: 601px)"
-          srcset="./assets/images/man-fixing-wave.webp"
-        />
-        <img
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          src="./assets/images/man-fixing-wave.webp"
-          alt="lab"
-          width="334"
-          height="380"
-        />
-      </picture>
-    </div>
-    <!-- Right Content Section-->
     <div class="cs-content">
-      <h2 class="cs-title">15% Discounts</h2>
-      <p class="cs-text">
-        Financing Available, Senior & Military Discounts, New Customer Discount.
-        Testing if updates*
-      </p>
-      <a href="" class="cs-button-solid">Get a Quote</a>
+      <div class="cs-flex">
+        <span class="cs-topper">Special Promotions</span>
+        <h2 class="cs-title">Exclusive Plumbing Offers &amp; Savings</h2>
+      </div>
     </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="./assets/images/man-fixing-wave.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="./assets/images/man-fixing-wave.webp"
+          />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="./assets/images/man-fixing-wave.webp"
+            alt="lab"
+            width="334"
+            height="380"
+          />
+        </picture>
+        <div class="cs-info">
+          <h3 class="cs-h3">Flexible Financing for Your Plumbing Needs</h3>
+          <span class="cs-desc">
+            We offer convenient financing options to make your plumbing projects
+            affordable.
+          </span>
+          <a href="" class="cs-button-solid">
+            Get Funded
+            <span class="arrow-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 8L22 12L18 16" />
+                <path d="M2 12H22" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="./assets/images/man-fixing-wave.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="./assets/images/man-fixing-wave.webp"
+          />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="./assets/images/man-fixing-wave.webp"
+            alt="lab"
+            width="334"
+            height="380"
+          />
+        </picture>
+        <div class="cs-info">
+          <h3 class="cs-h3">Honoring Our Seniors & Military</h3>
+          <span class="cs-desc">
+            We're proud to offer special discounts to seniors and members of the
+            military.
+          </span>
+          <a href="" class="cs-button-solid">
+            Claim now!
+            <span class="arrow-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 8L22 12L18 16" />
+                <path d="M2 12H22" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="./assets/images/man-fixing-wave.webp"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="./assets/images/man-fixing-wave.webp"
+          />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="./assets/images/man-fixing-wave.webp"
+            alt="lab"
+            width="334"
+            height="380"
+          />
+        </picture>
+        <div class="cs-info">
+          <h3 class="cs-h3">Welcome Offer: Save on Your First Service</h3>
+          <span class="cs-desc">
+            New to our services? Enjoy a special discount on your first plumbing
+            job.
+          </span>
+
+          <a href="" class="cs-button-solid">
+            Save now!
+            <span class="arrow-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 8L22 12L18 16" />
+                <path d="M2 12H22" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -364,7 +471,7 @@ eleventyNavigation:
     </div>
     <!--Slider Initialization Script-->
     <script>
-      const el = document.querySelector(".blaze-slider");
+      const el = document.querySelector('.blaze-slider');
       new BlazeSlider(el);
     </script>
   </div>
@@ -396,4 +503,3 @@ eleventyNavigation:
 </section>
 
 {% include "components/cta.html" %} {% endblock %}
-
